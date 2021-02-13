@@ -1,0 +1,123 @@
+<a class="icon" href="javascript:void(0);" onclick="showMenu()"><i class="fa fa-bars" id="navbar-fa-bars"></i></a>
+<div class="div-navbar" id="navbar">
+  <div class="navbar-left">
+    <a href="javascript:void(0);" onclick="showPage('main-page')" class="navbar-item">Home</a>
+    <a href="javascript:void(0);" onclick="showPage('projects-page')" class="navbar-item">Projects</a>
+  </div>
+  <div class="navbar-right">
+    <a href="javascript:void(0);" onclick="showPage('about-page')" class="navbar-item">About</a>
+  </div>
+</div>
+
+<script>
+  function showMenu() {
+    var x = document.getElementById('navbar');
+    if (x.className === "div-navbar") {
+      x.className += " visible";
+    } else {
+      x.className = "div-navbar";
+    }
+  };
+
+  function showPage( subjectPage ) {
+    var divsToHide = document.getElementsByClassName("pages"); 
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].className = "pages";
+    };
+    var divToShow = document.getElementById( subjectPage );
+    divToShow.className += " visible";
+  }
+</script>
+
+<style>
+  .icon {
+    display: none;
+  }
+
+  .div-navbar {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+    box-shadow: 1px 1px 8px rgb(220, 220, 220);
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(190, 190, 190);
+    text-align: center;
+  }
+
+  .navbar-left {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(50px, max-content));
+    justify-content: left;
+  }
+
+  .navbar-right {
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content);
+    justify-content:right;
+  }
+
+  .navbar-item {
+    padding: 20px;
+  }
+
+  a.navbar-item:link {
+    text-decoration: none;
+    color: gray;
+  }
+
+  a.navbar-item:visited {
+    color: gray;
+  }
+
+  a.navbar-item:hover {
+    color: rgb(45, 185, 125);
+    background-color: rgb(230, 230, 230);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .icon {
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 1px 1px 8px rgb(220, 220, 220);
+      font-weight: bolder;
+      font-size: x-large;
+      color: rgb(190, 190, 190);
+    }
+
+    .div-navbar {
+      display: none;
+    }
+
+    .div-navbar.visible {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 10px;
+      border-radius: 0%;
+    }
+
+    .navbar-left {
+      grid-template-columns: 1fr;
+    }
+
+    .navbar-right {
+      grid-template-columns: 1fr;
+      justify-content: left;
+    }
+
+    .navbar-item {
+      padding: 10px;
+      text-align: left;
+    }
+
+    #navbar-fa-bars {
+      color: rgb(145, 145, 145);
+      font-size: x-large;
+    }
+
+  }
+</style>
