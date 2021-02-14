@@ -3,6 +3,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.index-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .pages {
   display: none;
   padding-top: 50px;
