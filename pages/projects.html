@@ -1,3 +1,122 @@
 <div id="projects-page" class="pages">
-  Projects
+  <div class="body_grid">
+    <div class="responsive_img"><img src="../assets/cv_img/Slide2.jpeg" alt=""></div>
+    <div class="img_texts">
+      <h1 class="p_title">Novel Cas9 proteins</h1>
+      <details>
+        <summary class="summary p_in_grig"><strong>Background</strong> - CRISPR-Cas9 in prokaryotes</summary>
+        <p class="p_in_grig">
+          CRISPR-Cas9 was originally adapted from bacteria for precise genome editing applications in human cells. 
+          The discovery of the CRISPR-Cas9 systems came through the pioneering work by 
+          Prof. Jennifer Doudna and Prof. Emmanula Charpentier aiming at understanding 
+          how bacteria acquire immunity against phages. 
+          In prokaryotes, the CRISPR-Cas systems are multi-components, i.e., one or mutiple Cas proteins 
+          (e.g., Cas1, Cas2, etc.), and one or more short RNAs (e.g., crRNA and tracrRNA), 
+          which together form a RiboNucleoProtein (RNP) complex. 
+          In the majority of bacteria, several Cas proteins work together to find and destroy 
+          the genetic materials from invading viruses. 
+          However, in a small percentage of bacteria, all functions to find and destroy the invading genomes 
+          is provided via a single protein, called Cas9.
+        </p>
+      </details>
+      <details>
+        <summary class="summary p_in_grig"><strong>The Chellenge</strong> - harnessing novel CRISPR-Cas9</summary>
+        <p class="p_in_grig">
+          To date, the mostly used CRISPR-Cas9 systems in human cells is the Cas9 discovered in 
+          <b><i>Streptococcus pyogenes</i> (spCas9)</b>. 
+          Bringing new CRISPR-Cas9 systems out from prokaryotic cells and adapting them for applications 
+          in human cells is challenging for several reasons. 
+          First of all, correct identification of RNA species (e.g., crRNA and tracrRNA) from raw and 
+          un-annotated sequencing data requires multi-desciplinary knowledge in bioinformatics and molecular biology. 
+          Second, there are fundamental differences in the central dogma of life between prokaryotic 
+          and eukaryotic cells, which adds another layer of complexity on how the activity of 
+          new Cas9 variants could to be tested in human cells.
+        </p>
+      </details>
+      <details>
+        <summary class="summary p_in_grig"><strong>The Achievement</strong> - novel Cas9s from IIB class</summary>
+        <p class="p_in_grig">
+          During my postdoctoral research at AstraZeneca, I contributed to the discovery and adaptation of 
+          several Cas9 proteins from IIB class. 
+          We discovered that Cas9s from IIB class cut the DNA at different positions compared to 
+          the frequently used spCas9. 
+          While spCas9 generate either blind or single nucleotide overhang DNA cleavages, 
+          Cas9s from IIB class cut the DNA in a staggered manner and leave 
+          3 to 5 nucleotides overhang. This novel nuclease activity may enable designing 
+          more efficient knock-in startegies.
+        </p>
+      </details>
+    </div>
+    <div class="responsive_img"><img src="../assets/cv_img/Slide3.jpeg" alt=""></div>
+    <div class="img_texts">
+      <h1 class="p_title">RIMA</h1>
+      <details>
+        <summary class="summary p_in_grig"><strong>Background</strong> - "Random Indels"</summary>
+        <p class="p_in_grig">
+          Genome editing consists of two sequential events: <i>cut</i> and <i>repair</i>. 
+          The <i>cut</i> is often introduced via applying programmable nucleases like Cas9 in a targetd manner. 
+          The <i>repair</i>, however, mainly relies on the recruitment of cell's own DNA repair machinery. 
+          Perfect repairs at the broken site reconstitute the sequence of the targeted site, 
+          which could be cleaved again and again by the programmed nuclease. 
+          Repairs can also lead to intoduction of new mutations 
+          (i.e., insertion and deletions, so-called as indels) at the cleavage site. 
+        </p>
+      </details>
+      <details>
+        <summary class="summary p_in_grig"><strong>The Chellenge</strong> - DNA repair profiling</summary>
+        <p class="p_in_grig">
+          Indels were assumed to be random repair events, until recently that several publications 
+          reavealed their non randomness nature. Indeed, indel profiles at different genomic loci 
+          are distinct from each other, however, the indel profiles are reproducible at a given 
+          target site in different cell lines and between different experimental replicates. 
+          So, what causes the formation of reproducible mutations at a given target site in different cells?
+        </p>
+      </details>
+      <details>
+        <summary class="summary p_in_grig"><strong>The Achievement</strong> - Rational Indel Meta-Analysis (RIMA)</summary>
+        <p class="p_in_grig">
+          Through my research on charachterizing the Cas9 nucleases in human cells, I developed a bioinformatics tool, 
+          called <i><b>R</b>ational <b>I</b>ndel <b>M</b>eta-<b>A</b>nalysis (<b>RIMA</b>)</i>, 
+          to analyze, categorize and visualize the mutation patterns at Cas9 cleavage sites. 
+          RIMA aid the understanding of how DNA repair pathways interact with the Cas9 cleavge 
+          activity and the sequence context of a targeted site, which further explains the reasons behind 
+          the non-randomness nature of Cas9-induced mutations. RIMA could also help to profile the contribution 
+          of different DNA repair pathways in the repair of DNA double strand breaks in human cells. 
+          RIMA has enabled several applications in genome editing and cancer research. I used RIMA 
+          to differentiate the nuclease activity of spCas9 and new Cas9 proteins from IIB class. 
+          Different Cas9s possess different nuclease activity, which results in the formation of 
+          distinct indel profiles at their targeted sites. 
+          In cancer, cells often loss the activity of one of the DNA repair pathways, which in turn 
+          results in their addiction to the remaining DNA repair pathways to cope with their fast-paced replication. 
+          Hence, targeting the over-activated DNA repair pathway 
+          is an attracting approach in cancer drug discovery programs. Using RIMA, we could 
+          measure the overall DNA repair capacity of the cells, validate the role of the key 
+          proteins involved in DNA repair pathways, and screen for compounds that inhibit the over-activated 
+          repair pathway.
+        </p>
+      </details>
+    </div>
+    <div class="responsive_img"><img src="../assets/cv_img/Slide4.jpeg" alt=""></div>
+    <div class="img_texts">
+      <h1 class="p_title">RORA-Seq</h1>
+      <details>
+        <summary class="summary p_in_grig"><strong>Background</strong> - Unwanted Cas9 cuts</summary>
+        <p class="p_in_grig">
+          Unwanted Cas9 off-target. 
+        </p>
+      </details>
+      <details>
+        <summary class="summary p_in_grig"><strong>The Chellenge</strong> - bioinformatics analysis</summary>
+        <p class="p_in_grig">
+          NGS detection limit
+        </p>
+      </details>
+      <details>
+        <summary class="summary p_in_grig"><strong>The Achievement</strong> - Rational Off-target Ranking Algorithm and confirmation by Sequencing (RORA-Seq)</summary>
+        <p class="p_in_grig">
+          Detection of undetectables.
+        </p>
+      </details>
+    </div>
+  </div>
 </div>
