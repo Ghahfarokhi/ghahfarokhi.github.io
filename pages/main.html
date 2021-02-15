@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="profile-description pagebreak">
-      <p style="font-size: x-large; color: rgb(153, 153, 153); text-align: center;">
+      <p>
         Experienced Molecular Biologist, with over 10 years of experience in Genome Editing. 
         Track record of delivering impactful innovation in the CRISPR field. 
         Excels at bridging the gap between Bioinformatics and Biology. 
@@ -152,6 +152,12 @@
     line-height: 300%;
   }
 
+  .profile-description > p {
+    font-size: large; 
+    color: rgb(153, 153, 153); 
+    text-align: center;
+  }
+  
   @media screen and (max-width: 600px) {
     #about-grid {
       grid-template-columns: 1fr;
@@ -188,8 +194,9 @@
       all: unset;
     }
 
-    .profile-description {
-      all: unset;
+    .profile-description > p {
+      font-size: large;
+      line-height: 150%;
     }
 
     .pagebreak {
@@ -227,6 +234,13 @@
 
     .portfolio-card-grid {
       all: unset;
+    }
+
+    .portfolio-card-grid > h1 {
+      font-size: xx-large;
+    }
+    .portfolio-card-grid > h2 {
+      font-size: x-large;
     }
 
     .profile-description {
