@@ -6,14 +6,15 @@
 	<meta name="description" content="Check out my github CRISPR repositories, sgRNA Annotator, RIMA, RORA-Seq, ...">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="./src/css/main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./src/css/main.css" type="text/css"/>
+	<link rel="stylesheet" href="./src/css/print.css" type="text/is" media="print"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<link rel="icon" href="./assets/img/favicon.ico"/>
 
 	<script src="./src/js/jquery-3.5.1.min.js"></script>
 </head>
 
-<body>
+<body onbeforeprint="prepareMeForPrint()">
 	<div class="index-container">
 		<div id="include-navbar"></div>
 		<div id="include-main"></div>
@@ -29,6 +30,17 @@
 		$( "#include-publications" ).load("./pages/publications.html");
 		$( "#include-about" ).load("./pages/about.html");
 		$( "#include-footer" ).load("./common/footer.html");
+	</script>
+	<script>
+		function prepareMeForPrint(){
+			// Fetch all the details element.
+			const details = document.querySelectorAll("details");
+
+			// Add the onclick listeners.
+			details.forEach((targetDetail) => {
+				targetDetail.open
+			});
+		}
 	</script>
 </body>
 </html>

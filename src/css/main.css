@@ -67,16 +67,14 @@ h1, h2, h3 {
 
   .responsive_img > img {
     display: block;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
   }
 
   .projects_img_text:nth-of-type(4) {
     grid-column: 1;
     grid-row: 2;
-  }
-
-  .projects_img_text > * {
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   .projects_img_text > Details > Summary:hover {
@@ -96,5 +94,11 @@ h1, h2, h3 {
 
   ol, ul {
     padding-left: 10px;
+  }
+}
+
+@media print {
+  #include-navbar, #include-footer {
+    display: none;
   }
 }
