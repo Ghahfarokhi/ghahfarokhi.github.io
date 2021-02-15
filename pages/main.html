@@ -1,4 +1,175 @@
-<div id="main-page" class="pages">
-
+<div id="main-page" class="pages visible">
+  <div id="about-grid">
+    <div id="portfplio-card">
+      <img id="portrait" src="../assets/img/ATG-portrait.jpg" alt="Amir Taheri Ghahfarokhi">
+      <div class="portfplio-card-grid">
+        <p> </p>
+        <h1>Amir Taheri Ghahfarokhi</h1>
+        <h2>Molecular Biologist</h2>
+        <p>CRISPR expert at AstraZeneca, Gothenburg, Sweden.</p>
+        <h2>Research interest</h2>
+        <p>
+          DNA repair<br>
+          Genome editing<br>
+          CRISPR-Cas technology<br>
+          Bioinformatics. <br>
+        </p>
+      </div>
+    </div>
+    <div id="portfolio-work-education">
+      <h1>Work exprience</h1>
+      <h2>Scientist (2018 - present)</h2>
+      <ul>
+        <li><strong>Discovery Sciences, AstraZeneca, Gothenburg, Sweden.</strong></li>
+        <h3>Responsiblities:</h3>
+        <li>Supporting drug discovery and therapeutic genome editing programs.</li>
+        <li>Developing bioinformatics tools for detection of CRISPR-induced 
+          mutations at on-target and off-target sites using deep-targeted sequencing.</li>
+        <li>Unpublished: Rational Off-target Ranking Algorithm and confirmation by Sequencing (RORA-Seq).</li>
+      </ul>
+      <h2>PostDoc (2015 - 2018)</h2>
+      <ul>
+        <li><strong>Discovery Sciences, AstraZeneca, Gothenburg, Sweden.</strong></li>
+        <h3>Responsiblities:</h3>
+        <li>Charachterization of Cas9 nuclease activity in human cells and 
+          profiling the DNA repair capacity of the cells using RIMA (published in  
+          <a class="textLineLink" href="https://academic.oup.com/nar/article/46/16/8417/5055824">Nucleic Acids Research</a>).</li>
+        <li>Comprehesive bioinformatics analysis of Cas9s from IIB family (please 
+          <a class="textLineLink" href="https://patents.google.com/patent/WO2019099943A1">see patent here</a>).</li>
+        <li>Discovery of novel nuclease activity in Cas9-IIBs (please 
+          <a class="textLineLink" href="https://patents.google.com/patent/WO2019099943A1">see patent here</a>).</li>
+        <li>Established a co-targeting enrichment startegy in Cas9 targeted cells (please 
+          <a class="textLineLink" href="https://patents.google.com/patent/WO2017122096A1/en">see patent here</a>).</li>
+      </ul>
+      <h2>Scientist (2014 - 2015)</h2>
+      <ul>
+        <li><strong>Birjand University of Medical Sciences, Iran.</strong></li>
+        <h3>Responsiblities:</h3>
+        <li>Established the Cell and Molecular Biology lab.</li>
+        <li>Developed TALENs generation protocol.</li>
+        <li>Designed embryo-based LDLR gene targeting in mouse.</li>
+      </ul>
+      <hr class="portfplio-card-hr">
+      <h1>Education</h1>
+      <h2>PhD (2009 - 2014)</h2>
+      <ul>
+        <li>Molecular Genetics, 
+          <a class="textLineLink" href="https://www.um.ac.ir/#">Ferdowsi Univerity of Mashhad</a> , Iran.
+        </li>
+        <li><strong>Dissertation entitled:</strong> Engineering TALENs for Targeted Disruption and validation of Myostatin Gene in Mouse Embryonic Stem Cells.</li>
+        <li><strong>Thesis work:</strong> Joined Prof. Paul Verma’s research team, at Monash Univeristy, Melbourne, Australia (2012-2013).</li>
+      </ul> 
+      <h2>MSc (2007 - 2009)</h2>
+      <ul>
+        <li>Molecular Genetics, 
+          <a class="textLineLink" href="https://www.um.ac.ir/#">Ferdowsi Univerity of Mashhad</a>, Iran.
+        </li>
+        <li><strong>Thesis entitled:</strong> 
+        Development of Quantitative Competitive PCR (qcPCR) and Absolute Based Real-Time PCR Assays 
+        for Quantification of Butyrate Producing Bacterium: <i>Butyrivibrio fibrisolvens</i>
+        <a class="textLineLink" href="https://ijasr.um.ac.ir/article_35026.html"></a>.
+        </li>
+      </ul> 
+      <h2>BSc (2001 - 2006)</h2>
+      <ul>
+        <li>Animal Sciences, Kurdistan University, Sanandaj, Iran.</li>
+        <li><strong>University homepage: </strong>
+          <a class="textLineLink" href="https://en.uok.ac.ir/EN.aspx">uok.ac.ir</a>.</li>
+      </ul> 
+    </div>
+  </div>
 </div>
 
+<style>
+  #about-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #portfplio-card {
+    max-width: 300px;
+    min-width: 250px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 75px;
+    border-color: rgb(220, 220, 220);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 0px 0px 10px rgb(220, 220, 220);
+    background-color: white;
+  }
+
+  #portrait {
+    margin-top: -75px;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border-color: rgb(220, 220, 220);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 10px rgb(220, 220, 220);
+    transform: translate(50%, -55%);
+  }
+
+  #portfolio-work-education {
+    padding: 50px;
+  }
+
+  .portfplio-card-grid {
+    margin-top: -75px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .portfplio-card-grid > h1 {
+    font-size: large;
+  }
+  .portfplio-card-grid > h2 {
+    font-size: medium;
+  }
+
+  .portfplio-card-hr {
+    border-top: 1px solid rgb(220, 220, 220);
+    margin: 25px;
+  }
+
+  @media screen and (max-width: 600px) , print {
+    #about-grid {
+      grid-template-columns: 1fr;
+    }
+
+    #portfplio-card {
+      all: unset;
+      text-align: center;
+    }
+
+    #portrait {
+      all: unset;
+      display: block;
+      width: 50%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      border-color: rgb(145, 145, 145);
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: 0px 0px 10px rgb(133, 133, 133);
+    }
+
+    #portfolio-work-education {
+      padding: unset;
+    }
+
+    .portfolio-card-name {
+      padding-top: 25px;
+    }
+
+    .portfplio-card-grid {
+      all: unset;
+    }
+  }
+
+</style>
