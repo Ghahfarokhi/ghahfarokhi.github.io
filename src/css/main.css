@@ -9,7 +9,7 @@ ul {
 }
 
 h1, h2, h3 {
-  color: rgb(35, 150, 100);;
+  color: rgb(100, 100, 100);;
 }
 
 .index-container {
@@ -58,7 +58,7 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
-@media screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   .projects_grid {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -82,5 +82,19 @@ h1, h2, h3 {
   .projects_img_text > Details > Summary:hover {
     text-shadow: 1px 1px 8px gray;
   }
+}
 
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: larger;
+  }
+
+  h2 {
+    font-size: large;
+  }
+
+  ol, ul {
+    padding-left: 10px;
+  }
 }
