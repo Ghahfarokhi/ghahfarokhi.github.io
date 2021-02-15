@@ -3,20 +3,27 @@
     <div class="responsive_img"><img src="../assets/cv_img/Slide2.jpeg" alt=""></div>
     <div class="projects_img_text">
       <script>
-        // Fetch all the details element.
-        const details = document.querySelectorAll("details");
-
-        // Add the onclick listeners.
-        details.forEach((targetDetail) => {
-          targetDetail.addEventListener("click", () => {
-            // Close all the details that are not targetDetail.
-            details.forEach((detail) => {
-              if (detail !== targetDetail) {
-                detail.removeAttribute("open");
-              }
+        function enforceDetailsListenToClick(expendORcollapse) {
+          // Fetch all the details element.
+          const details = document.querySelectorAll("details");
+          // Add the onclick listeners.
+          if (expendORcollapse === 'collapse') {
+            details.forEach((targetDetail) => {
+              targetDetail.addEventListener("click", () => {
+                // Close all the details that are not targetDetail.
+                details.forEach((detail) => {
+                  if (detail !== targetDetail) {
+                    detail.removeAttribute("open");
+                  }
+                });
+              });
             });
-          });
-        });
+          } else if (expendORcollapse === 'expand') {
+            for (let deetail of details) {
+              deetail.setAttribute('open', 'true');
+            }
+          } 
+        }
       </script>
       <h1>Novel Cas9 proteins</h1>
       <details>

@@ -98,7 +98,10 @@ h1, h2, h3 {
 }
 
 @media print {
-  #include-navbar, #include-footer {
-    display: none;
-  }
+  #include-navbar, #include-footer {display: none;}
+
+  .projects_grid {display: block;}
+
+  .pagebreak {page-break-before: always;}
+
 }
