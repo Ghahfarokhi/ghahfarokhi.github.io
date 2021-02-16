@@ -36,7 +36,7 @@
       <div class="blog-short-desciption">
         <h1>gRNA Annotator</h1>
         <p><span class="programming-language">Excel</span></p>
-        <p>A macro-enabled Excel workbook (CRISPRn_annotator_v1.0.xlsm), which could be used 
+        <p class="ellipsed-text">A macro-enabled Excel workbook (CRISPRn_annotator_v1.0.xlsm), which could be used 
           to quickly select paired-sgRNAs for CRISPR-mediated gene knockout experiments. 
           A similar Excel workbook (CRISPRai_annotator_v1.0.xlsm) can be used 
           for picking sgRNAs for gene activation/inhibition experiments. 
@@ -158,6 +158,12 @@
         color: rgb(255, 255, 255);
         font-weight: bolder;
         background-color: tomato;
+      }
+
+      .ellipsed-text {
+        max-height: 250px;
+        overflow: scroll;
+        text-overflow: ellipsis;
       }
     }
 
