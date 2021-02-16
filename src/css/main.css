@@ -57,26 +57,6 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
-.share-linkedin {
-  width: 120px; 
-  height: 30px; 
-  background: royalblue; 
-	color: white; 
-  font-size: 20px; 
-  text-align: center;
-  margin-top: 25px;
-	padding: 5px; 
-  font-weight: bolder;
-  border-radius: 10px; 
-  text-decoration: none;
-}
-
-.share-linkedin:hover {
-  background: rgba(255, 255, 255); 
-	color: royalblue; 
-  border: 1px solid royalblue;
-}
-
 @media only screen and (min-width: 1025px) {
   .projects_grid {
     grid-template-columns: repeat(2, 1fr);
