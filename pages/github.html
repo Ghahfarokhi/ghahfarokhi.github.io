@@ -82,11 +82,12 @@
       background-color: rgb(255, 255, 255);
       max-width: 90%; 
       margin: 0 auto; 
-      border-radius: 3px;
+      overflow: hidden;
     }
 
     .cover-image-blog > a > img {
       max-width: 100%; 
+      height: auto;
       border-bottom: 1px solid white;
     }
 
@@ -139,6 +140,25 @@
       margin: 75px auto;
       margin-left: 10%;
       margin-right: 10%;
+    }
+
+    @media only screen and (max-width: 500px) {
+      .blog-short-desciption {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-short-desciption h1 {
+        text-align: center;
+      }
+
+      .blog-short-desciption .programming-language {
+        margin-top: 0px;
+        margin-left: 20%;
+        margin-right: 20%;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        background-color: tomato;
+      }
     }
 
   </style>
