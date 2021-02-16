@@ -1,13 +1,13 @@
 <a class="icon" href="javascript:void(0);" onclick="showMenu()"><i class="fa fa-bars" id="navbar-fa-bars"></i></a>
 <div class="div-navbar" id="navbar">
   <div class="navbar-left">
-    <a href="javascript:void(0);" onclick="showPage('main-page')" class="navbar-item">Home</a>
-    <a href="javascript:void(0);" onclick="showPage('projects-page')" class="navbar-item">Projects</a>
-    <a href="javascript:void(0);" onclick="showPage('publications-page')" class="navbar-item">Publications</a>
-    <a href="javascript:void(0);" onclick="showPage('github-page')" class="navbar-item">Github</a>
+    <a href="https://amirtaheri.info" class="navbar-item">Home</a>
+    <a href="../pages/projects.html" class="navbar-item">Projects</a>
+    <a href="../pages/publications.html" class="navbar-item">Publications</a>
+    <a href="../pages/github.html" class="navbar-item">Github</a>
   </div>
   <div class="navbar-right">
-    <a href="javascript:void(0);" onclick="showPage('contact-page')" class="navbar-item">Contact</a>
+    <a href="../pages/contact.html" class="navbar-item">Contact</a>
   </div>
 </div>
 
@@ -20,17 +20,6 @@
       x.className = "div-navbar";
     }
   };
-
-  function showPage( subjectPage ) {
-    var divsToHide = document.getElementsByClassName("pages"); 
-    for(var i = 0; i < divsToHide.length; i++){
-        divsToHide[i].className = "pages";
-    };
-    var divToShow = document.getElementById( subjectPage );
-    divToShow.className += " visible";
-    var x = document.getElementById('navbar');
-    x.className = "div-navbar";
-  }
 </script>
 
 <style>
