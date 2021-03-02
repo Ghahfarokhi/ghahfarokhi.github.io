@@ -123,10 +123,6 @@ h1, h2, h3 {
   .projects_img_text > Details > Summary:hover {
     text-shadow: 1px 1px 8px gray;
   }
-
-  .pages {
-    font-size: larger;
-  }
 }
 
 
