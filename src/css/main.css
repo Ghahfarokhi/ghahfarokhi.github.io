@@ -15,6 +15,10 @@ h1, h2, h3 {
   color: rgb(50, 50, 50);;
 }
 
+.hidden {
+  display: none;
+}
+
 .pages {
   display: block;
   padding-top: 50px;
@@ -56,20 +60,17 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
-.download-repo {
+#download-repo-div {
   display: grid;
-  width: 75px;
-  height: auto;
+  grid-template-columns: minmax(auto, 75px);
+  padding: 10px 0px 10px 0px;
 }
 
-.download-repo:hover {
-  box-shadow: 0 0 25px rgb(85, 85, 85);
+#download-repo-icon {
+  object-fit: scale-down;
+  max-width: 100%;
+  background-color: transparent;
 }
-
-.download-repo-icon {
-  width: 100%;
-}
-
 
 @media only screen and (min-width: 1025px) {
   .projects_grid {
