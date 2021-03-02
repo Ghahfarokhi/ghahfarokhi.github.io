@@ -26,7 +26,7 @@ h1, h2, h3 {
 .textLineLink {
   text-decoration: none;
   color: rgb(35, 150, 100);
-  background: url(../../assets/icon_external_link.png) center right no-repeat;
+  background: url(../../assets/icons/icon_external_link.png) center right no-repeat;
   padding-right: 15px;
 }
 
@@ -56,17 +56,20 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
-.fa-download {
-  font-size: 50px;
-  color: black;
-  border-radius: 5px;
-  padding: 5px;
+.download-repo {
+  display: grid;
+  width: 75px;
+  height: auto;
 }
 
-.fa-download:hover {
-  color: white;
-  background-color:black;
+.download-repo:hover {
+  box-shadow: 0 0 25px rgb(85, 85, 85);
 }
+
+.download-repo-icon {
+  width: 100%;
+}
+
 
 @media only screen and (min-width: 1025px) {
   .projects_grid {
