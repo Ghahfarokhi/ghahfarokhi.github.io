@@ -21,10 +21,26 @@ h1, h2, h3 {
 
 .pages {
   display: block;
+  max-width: 1024px;
+  margin: auto;
   padding-top: 50px;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 50px;
+}
+
+.pages > p > a > img {
+  display: block;
+  margin: auto;
+  object-fit: scale-down;
+  max-width: 100%;
+}
+
+.pages > p > img {
+  display: block;
+  margin: auto;
+  object-fit: scale-down;
+  max-width: 100%;
 }
 
 .textLineLink {
@@ -64,6 +80,18 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: minmax(auto, 75px);
   padding: 10px 0px 10px 0px;
+  font-size: small;
+  text-align: center;
+}
+
+#download-repo-div > a {
+  text-decoration: none;
+  color: gray;
+}
+
+#download-repo-div > a:hover {
+  color: royalblue;
+  text-shadow: 0 0 10px rgba(155, 175, 255, 0.665);
 }
 
 #download-repo-icon {
