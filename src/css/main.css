@@ -27,6 +27,7 @@ h1, h2, h3 {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 50px;
+  line-height: 1.6;
 }
 
 .pages > p > a > img {
