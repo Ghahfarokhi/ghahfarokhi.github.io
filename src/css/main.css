@@ -44,6 +44,25 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
+.pages > pre  {
+  display: block;
+  padding: 10px 5px 10px 5px;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+code {
+  background-color:  rgb(240, 240, 240);
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+  font-size: large;
+}
+
 .textLineLink {
   text-decoration: none;
   color: rgb(35, 150, 100);
