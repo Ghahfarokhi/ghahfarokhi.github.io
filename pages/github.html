@@ -35,7 +35,7 @@
       <div class="blog-short-desciption">
         <h1>HTML tools - CSV to DataTable</h1>
         <p><span class="programming-language">JavaScript</span></p>
-        <p class="ellipsed-text">
+        <p>
           Render any csv/tsv file into a <b>responsive</b>, <b>sortable</b>, and <b>searchable</b> HTML datatable 
           without any serverside scripting. The data file could either be provided via a URL 
           parameter [intended usage] or hard-coded into the HTML codes.
@@ -61,7 +61,7 @@
       <div class="blog-short-desciption">
         <h1>sgRNA Annotator</h1>
         <p><span class="programming-language">Excel</span></p>
-        <p class="ellipsed-text">A macro-enabled Excel workbook enabled 
+        <p>A macro-enabled Excel workbook enabled 
           paired-sgRNAs selection for gene knockout experiments. 
           A collection of sgRNAs for gene activation/inhibition experiments is also covered. 
           Supported systems: <b>Windows</b>  and <b>MacOS</b>.
@@ -106,18 +106,25 @@
     .beautiful-card {
       display: grid; 
       grid-template-columns: 1fr;
+      max-width: 750px; 
       border-radius: 10px;
       box-shadow: 0px 0px 50px rgb(199, 199, 199); 
       background-color: rgb(255, 255, 255);
-      max-width: 90%; 
       margin: 0 auto; 
       overflow: hidden;
+      transition: 1s;
+    }
+
+    .beautiful-card:hover {
+      transform: scale(1.05);
     }
 
     .cover-image-blog > a > img {
+      margin: auto;
       max-width: 100%; 
       height: auto;
       border-bottom: 1px solid white;
+      transition: transform .2s;
     }
 
     .blog-short-desciption {
@@ -187,12 +194,6 @@
         color: rgb(255, 255, 255);
         font-weight: bolder;
         background-color: tomato;
-      }
-
-      .ellipsed-text {
-        max-height: 250px;
-        overflow: scroll;
-        text-overflow: ellipsis;
       }
     }
 
