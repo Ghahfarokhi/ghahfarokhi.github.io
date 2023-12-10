@@ -15,6 +15,18 @@ h1, h2, h3 {
   color: rgb(50, 50, 50);;
 }
 
+h1 {
+  font-size:x-large;
+}
+
+h2 {
+  font-size: large;
+}
+
+h3 {
+  font-size: medium;
+}
+
 .hidden {
   display: none;
 }
@@ -119,7 +131,8 @@ code {
   background-color: transparent;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 750px) {
+
   .projects_grid {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -144,14 +157,7 @@ code {
 }
 
 
-@media only screen and (max-width: 750px) {
-  h1 {
-    font-size: larger;
-  }
-
-  h2 {
-    font-size: large;
-  }
+@media only screen and (max-width: 750px) 
 
   ol, ul {
     padding-left: 10px;
