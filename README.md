@@ -1,4 +1,4 @@
 # HTML and CSS codes for my github pages
 
 
-[https://amirtaheri.info](https://amirtaheri.info)
+[https://ghahfarokhi.github.io](https://ghahfarokhi.github.io)
