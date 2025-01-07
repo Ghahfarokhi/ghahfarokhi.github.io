@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ghahfarokhi
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - ghahfarokhi/ATG_CRISPResso2_to_RIMA2 
+  - ghahfarokhi/ATG_molbio_excel  
+  - ghahfarokhi/ATG_htmltools-csv-to-datatable 
+  - ghahfarokhi/ATG_sgRNA_Annotator 

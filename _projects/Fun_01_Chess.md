@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 4
+title: Chess 1700
 description: another without an image
 img:
-importance: 3
+importance: 1
 category: fun
 ---
 
