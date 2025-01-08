@@ -2,7 +2,7 @@
 layout: page
 title: PseCas9
 description: A sticky-cutter enzyme from Cas9-IIBs
-img: assets/img/PseCas9.jpeg
+img: assets/img/projects/PseCas9.jpeg
 importance: 2
 category: work
 related_publications: true
