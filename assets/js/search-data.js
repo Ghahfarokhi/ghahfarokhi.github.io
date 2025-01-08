@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "A growing collection of your cool projects.",
+          description: "A growing collection of cool projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-resume",
           title: "Resume",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -81,9 +81,9 @@ ninja.data = [{
           description: "Rational Off-target Ranking Algorithm",
           section: "Projects",handler: () => {
               window.location.href = "/projects/03_RORA/";
-            },},{id: "projects-chess-1700",
-          title: 'Chess 1700',
-          description: "another without an image",
+            },},{id: "projects-chess",
+          title: 'Chess',
+          description: "Occasional chess player, peak rating 1700",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Fun_01_Chess/";
             },},{
