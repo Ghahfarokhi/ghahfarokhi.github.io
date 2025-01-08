@@ -3,7 +3,6 @@ layout: about
 title: Bio
 permalink: /
 subtitle: CSO and co-founder at <a href='https://immitrabio.com/'>Immitra Bio GmbH</a>, Switzerland
-
 profile:
   align: right
   image: prof_pic.jpg
