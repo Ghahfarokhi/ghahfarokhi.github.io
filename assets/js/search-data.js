@@ -81,9 +81,14 @@ ninja.data = [{
           description: "Rational Off-target Ranking Algorithm",
           section: "Projects",handler: () => {
               window.location.href = "/projects/03_RORA/";
+            },},{id: "projects-immitra-bio",
+          title: 'Immitra Bio',
+          description: "Turning blood stem cells into protien factories",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/04_ImmitraBio/";
             },},{id: "projects-chess",
           title: 'Chess',
-          description: "Occasional chess player, peak rating 1700",
+          description: "Occasional chess player, rapid time format, peak rating 1700",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Fun_01_Chess/";
             },},{
