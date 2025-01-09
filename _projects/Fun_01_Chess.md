@@ -2,7 +2,7 @@
 layout: page
 title: Chess
 description: Occasional chess player, rapid time format, peak rating 1700
-img:
+img: assets/img/projects/Chess.webp
 importance: 1
 category: fun
 ---
