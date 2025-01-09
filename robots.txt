@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://ghahfarokhi.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://amirtaheri.info/sitemap.xml
