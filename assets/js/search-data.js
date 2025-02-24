@@ -88,7 +88,7 @@ ninja.data = [{
               window.location.href = "/projects/04_ImmitraBio/";
             },},{id: "projects-chess",
           title: 'Chess',
-          description: "Occasional chess player, rapid time format, peak rating 1700",
+          description: "Occasional chess player, rapid time format, peak rating in rapid 1900",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Fun_01_Chess/";
             },},{
